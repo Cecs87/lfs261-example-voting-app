@@ -4,7 +4,8 @@ pipeline {
     stage('') {
       steps {
         sh '''ls -ltr
-sleep 10'''
+              sleep 10
+              exit 1'''
       }
     }
 
